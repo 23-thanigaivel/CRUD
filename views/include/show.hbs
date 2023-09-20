@@ -1,0 +1,17 @@
+{{#each find}}
+<tr>
+    <td>{{inc @index}}</td>
+    <td>{{name}}</td>   
+    <td>{{email}}</td>
+    <td>{{gender}}</td>
+    <td>{{status}}</td>
+    <td>
+        <a href="/update-user?id={{id}}" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete" href="/user/delete?id={{id}}">
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+    {{/each}}
+</tr>
